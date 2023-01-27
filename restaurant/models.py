@@ -47,7 +47,7 @@ class Menu(models.Model):
         verbose_name_plural = _("menus")
 
     def __str__(self):
-        return self.title
+        return f"{self.title} : {str(self.price)}"
 
     def get_absolute_url(self):
         return reverse("menu_detail", kwargs={"pk": self.pk})
