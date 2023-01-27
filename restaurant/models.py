@@ -38,7 +38,9 @@ class Menu(models.Model):
         max_digits=10,
         decimal_places=2,
     )
-    inventory = models.IntegerField(verbose_name=_("Inventory"))
+    inventory = models.IntegerField(
+        verbose_name=_("Inventory"),
+    )
 
     class Meta:
         verbose_name = _("menu")

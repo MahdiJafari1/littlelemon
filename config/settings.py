@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # locals
     "restaurant",
+    # 3-rd parties
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
